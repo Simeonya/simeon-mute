@@ -5,7 +5,7 @@ description({ 'A simple script that allows you to mute yourself in the voice cha
 version({ '1.0.0' })
 
 ui_page('html/index.html');
-shared_script('shared/*');
+shared_script('shared/config.lua');
 
 server_scripts({
     'server/main.lua'
