@@ -1,3 +1,10 @@
+:root {
+    --mute-glow-color: rgba(255, 255, 255, 0.25);
+    --mute-bg-primary: rgba(61, 168, 197, 0.69);
+    --mute-bg-secondary: rgba(41, 45, 89, 0.69);
+    --mute-border-color: rgba(255, 255, 255, 1);
+}
+
 @keyframes slideInUp {
     from {
         opacity: 0;
@@ -26,11 +33,11 @@
 
     0%,
     100% {
-        box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.25), 0 0 15px rgba(61, 168, 197, 0.4);
+        box-shadow: inset 0px 4px 4px var(--mute-glow-color), 0 0 15px var(--mute-bg-primary);
     }
 
     50% {
-        box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.35), 0 0 30px rgba(61, 168, 197, 0.8);
+        box-shadow: inset 0px 4px 4px var(--mute-glow-color), 0 0 30px var(--mute-bg-primary);
     }
 }
 
@@ -71,9 +78,9 @@
     position: absolute;
     width: 82px;
     height: 82px;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(61, 168, 197, 0.69) 0%, rgba(41, 45, 89, 0.69) 100%);
-    border: 3px solid #FFFFFF;
-    box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    background: radial-gradient(50% 50% at 50% 50%, var(--mute-bg-primary) 0%, var(--mute-bg-secondary) 100%);
+    border: 3px solid var(--mute-border-color);
+    box-shadow: inset 0px 4px 4px var(--mute-glow-color);
     border-radius: 28px;
     transition: all 0.3s ease;
 }
